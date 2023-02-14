@@ -3,6 +3,10 @@ import configparser
 
 
 class Configuration:
+    ENV = {
+
+    }
+
     def __new__(cls):
         if not hasattr(cls, 'instance'):
             cls._instance = super().__new__(cls)
@@ -28,12 +32,17 @@ class Configuration:
     def search_path(self):
         return self.__search_path
 
+    @property
+    def log_dir(self):
+        return self.__log_dir
+
     def init(self):
         args, config = Parser().set_arguments()
         self.__start_date = args["start_date"]
         self.__end_date = args["end_date"]
-        self.__env = args["env"]
-        self.__search_path = config["search_path"]
+        self.__env = args["env"].upper()
+        self.__search_path = config[self.__env]["search_path"]
+        self.__log_dir = config["Paths"]["log_dir"]
 
 
 class Parser:
@@ -45,8 +54,8 @@ class Parser:
 
     def set_arguments(self):
         args = self.__set_input_arguments()
-        config = self.__set_configuration(args.env)
-        return args.__dict__, dict(config)
+        config = self.__set_configuration()
+        return args, config
 
     def __set_input_arguments(self):
         parser = argparse.ArgumentParser(
@@ -55,12 +64,12 @@ class Parser:
             epilog = 'Text at the bottom of help'
         )
         [parser.add_argument(arg) for arg in self.__ARGUMENTS]
-        return parser.parse_args()
+        return parser.parse_args().__dict__
 
-    def __set_configuration(self, env):
+    def __set_configuration(self):
         config = configparser.ConfigParser()
         config.read('env.ini')
-        return config[env.upper()]
+        return config
         
 
 if __name__ == "__main__":
