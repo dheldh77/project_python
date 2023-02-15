@@ -3,10 +3,6 @@ import configparser
 
 
 class Configuration:
-    ENV = {
-
-    }
-
     def __new__(cls):
         if not hasattr(cls, 'instance'):
             cls._instance = super().__new__(cls)

@@ -1,6 +1,6 @@
 import logging
 import os
-from utils.config.config import Configuration
+import sys
 from multiprocessing import current_process
 
 
@@ -12,8 +12,8 @@ class Logger(object):
         return cls._instance
 
     def __set_path(self):
-        log_dir = Configuration().log_dir
-        pid = "main" if current_process().name.lower() == "mainprocess" else current_process()._identity[0]
+        log_dir = "log"
+        pid = "main" if current_process().name.lower() == "mainprocess" else current_process().name[-1]
         filename = "test.log"
         
         os.makedirs(f"{log_dir}/{pid}", exist_ok=True)
@@ -36,9 +36,15 @@ class Logger(object):
         file_handler = logging.FileHandler(self.__path)
         file_handler.setFormatter(formatter)
         self.__logger.addHandler(file_handler)
+
+    def __get_function_name(self):
+        return sys._getframe(2).f_code.co_name
+
+    def __get_class_name(self, cls):
+        return str(cls).replace("<class '", "").replace("'>", "")
     
-    def info(self, msg):
-        self.__logger.info(msg)
+    def info(self, cls, msg=None):
+        self.__logger.info(f"{self.__get_class_name(cls)}.{self.__get_function_name()} >> {msg}")
 
     @property
     def logger(self):

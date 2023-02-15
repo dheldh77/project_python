@@ -1,2 +1,46 @@
 [INFO] :: 2023-02-15 01:24:34,434 :: Application Start
 [INFO] :: 2023-02-15 01:24:34,435 :: Application End
+[INFO] :: 2023-02-15 23:52:41,362 :: <class 'summary.summary_executor.SummaryExecutor'>.__init__ >> msg
+[INFO] :: 2023-02-15 23:54:53,528 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:14,679 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:27,141 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,419 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,432 :: summary.summary_executor.Provider.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,432 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,433 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,433 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:10:42,433 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,690 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,703 :: summary.summary_executor.Provider.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,704 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,704 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,704 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:05,704 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,952 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,965 :: summary.summary_executor.Provider.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,966 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,966 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,966 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:12:45,966 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,468 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,481 :: summary.summary_executor.Provider.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,482 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,482 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,482 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:13:17,482 :: summary.summary_executor.Consumer.__init__ >> msg
+[INFO] :: 2023-02-16 00:14:57,983 :: summary.summary_executor.Consumer.__del__ >> msg
+[INFO] :: 2023-02-16 00:14:57,984 :: summary.summary_executor.Consumer.__del__ >> msg
+[INFO] :: 2023-02-16 00:14:57,984 :: summary.summary_executor.Consumer.__del__ >> msg
+[INFO] :: 2023-02-16 00:14:57,984 :: summary.summary_executor.Provider.__del__ >> msg
+[INFO] :: 2023-02-16 00:14:57,985 :: summary.summary_executor.Consumer.__del__ >> msg
+[INFO] :: 2023-02-16 00:21:10,753 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:21:47,085 :: summary.summary_executor.Provider.<module> >> msg
+[INFO] :: 2023-02-16 00:22:03,676 :: summary.summary_executor.Provider.<module> >> msg
+[INFO] :: 2023-02-16 00:27:15,451 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:27:49,608 :: summary.summary_executor.SummaryExecutor.__init__ >> msg
+[INFO] :: 2023-02-16 00:29:36,309 :: summary.summary_executor.SummaryExecutor.__init__ >> None
+[INFO] :: 2023-02-16 00:30:43,580 :: summary.summary_executor.SummaryExecutor.__init__ >> None
+[INFO] :: 2023-02-16 00:32:04,742 :: summary.summary_executor.SummaryExecutor.__init__ >> None
+[INFO] :: 2023-02-16 00:33:21,245 :: summary.summary_executor.SummaryExecutor.__init__ >> None
+[INFO] :: 2023-02-16 00:35:45,487 :: summary.summary_executor.SummaryExecutor.__init__ >> None
+[INFO] :: 2023-02-16 00:36:31,030 :: summary.summary_executor.SummaryExecutor.__init__ >> None
